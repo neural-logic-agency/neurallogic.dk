@@ -1,21 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://neurallogic.dk/</loc><priority>1.0</priority></url>
-  <url><loc>https://neurallogic.dk/de/</loc><priority>1.0</priority></url>
-  <url><loc>https://neurallogic.dk/da/</loc><priority>1.0</priority></url>
-  <url><loc>https://neurallogic.dk/how-it-works/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/questions/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/for/property-and-asset-management/</loc><priority>0.8</priority></url>
-  <url><loc>https://neurallogic.dk/for/law-and-accounting/</loc><priority>0.8</priority></url>
-  <url><loc>https://neurallogic.dk/archive-conversion/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/de/so-funktioniert-es/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/de/fragen/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/de/fuer/immobilienverwaltung/</loc><priority>0.8</priority></url>
-  <url><loc>https://neurallogic.dk/de/fuer/kanzleien/</loc><priority>0.8</priority></url>
-  <url><loc>https://neurallogic.dk/de/archiv-konvertierung/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/da/saadan-virker-det/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/da/spoergsmaal/</loc><priority>0.9</priority></url>
-  <url><loc>https://neurallogic.dk/da/for/ejendomsadministration/</loc><priority>0.8</priority></url>
-  <url><loc>https://neurallogic.dk/da/for/advokater-og-revisorer/</loc><priority>0.8</priority></url>
-  <url><loc>https://neurallogic.dk/da/arkiv-konvertering/</loc><priority>0.9</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://neurallogic.dk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/da/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/how-it-works/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/how-it-works/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/so-funktioniert-es/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/saadan-virker-det/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/how-it-works/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/de/so-funktioniert-es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/how-it-works/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/so-funktioniert-es/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/saadan-virker-det/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/how-it-works/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/da/saadan-virker-det/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/how-it-works/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/so-funktioniert-es/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/saadan-virker-det/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/how-it-works/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/questions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fragen/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/spoergsmaal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/questions/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/de/fragen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fragen/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/spoergsmaal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/questions/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/da/spoergsmaal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fragen/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/spoergsmaal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/questions/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/archive-conversion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/archive-conversion/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/archiv-konvertierung/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/arkiv-konvertering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/archive-conversion/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/de/archiv-konvertierung/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/archive-conversion/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/archiv-konvertierung/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/arkiv-konvertering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/archive-conversion/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/da/arkiv-konvertering/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/archive-conversion/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/archiv-konvertierung/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/arkiv-konvertering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/archive-conversion/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/for/property-and-asset-management/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/for/property-and-asset-management/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fuer/immobilienverwaltung/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/for/ejendomsadministration/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/for/property-and-asset-management/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/de/fuer/immobilienverwaltung/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/for/property-and-asset-management/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fuer/immobilienverwaltung/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/for/ejendomsadministration/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/for/property-and-asset-management/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/da/for/ejendomsadministration/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/for/property-and-asset-management/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fuer/immobilienverwaltung/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/for/ejendomsadministration/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/for/property-and-asset-management/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/for/law-and-accounting/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/for/law-and-accounting/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fuer/kanzleien/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/for/advokater-og-revisorer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/for/law-and-accounting/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/de/fuer/kanzleien/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/for/law-and-accounting/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fuer/kanzleien/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/for/advokater-og-revisorer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/for/law-and-accounting/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neurallogic.dk/da/for/advokater-og-revisorer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neurallogic.dk/for/law-and-accounting/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neurallogic.dk/de/fuer/kanzleien/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://neurallogic.dk/da/for/advokater-og-revisorer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neurallogic.dk/for/law-and-accounting/"/>
+    <priority>0.8</priority>
+  </url>
 </urlset>

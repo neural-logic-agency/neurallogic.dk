@@ -27,6 +27,8 @@ LANGS = ["en", "de", "da"]
 # Where each language's front page lives, and what the chooser calls it.
 HOME = {"en": "https://neurallogic.dk/", "de": "https://neurallogic.dk/de/", "da": "https://neurallogic.dk/da/"}
 LABEL = {"en": "EN", "de": "DE", "da": "DA"}
+# What a screen reader calls the chooser, in the page's own language (same words as the reading pages).
+LANG_LABEL = {"en": "Language", "de": "Sprache", "da": "Sprog"}
 OUTPUT = {"en": ROOT / "index.html", "de": ROOT / "de" / "index.html", "da": ROOT / "da" / "index.html"}
 NUMBER = {"en": {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven"},
           "de": {1: "Eine", 2: "Zwei", 3: "Drei", 4: "Vier", 5: "Fünf", 6: "Sechs", 7: "Sieben"},
@@ -76,7 +78,7 @@ def langswitch(lang: str) -> str:
         '<a href="{}" hreflang="{}" lang="{}"{}>{}</a>'.format(
             HOME[code], code, code, ' aria-current="page"' if code == lang else "", LABEL[code])
         for code in codes)
-    return f'<nav class="langs" aria-label="Language">{links}</nav>'
+    return f'<nav class="langs" aria-label="{LANG_LABEL[lang]}">{links}</nav>'
 
 
 def head_links(lang: str) -> str:
@@ -103,6 +105,7 @@ def render(lang: str) -> str:
     out = out.replace("{{langswitch}}\n", switch + "\n" if switch else "")
     out = out.replace("{{canonical}}", head_links(lang))
     out = out.replace("{{ogurl}}", HOME[lang])
+    out = out.replace("{{lang}}", lang)
     out = out.replace('<html lang="en">', f'<html lang="{lang}">')
     if "{{" in out:
         leftover = re.findall(r"\{\{[^}]{0,40}\}\}", out)
