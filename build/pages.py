@@ -633,7 +633,7 @@ def render_page(page) -> str:
 <link rel="icon" href="{ICON}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/pages.css">
 <script type="application/ld+json">
 {structured_data(page)}
@@ -677,14 +677,25 @@ def render_page(page) -> str:
 
 
 def write_sitemap() -> None:
-    fronts = [(SITE + HOME[code], "1.0") for code in LANGS]
-    urls = fronts + [(f"{SITE}/{p['slug']}/", p["priority"]) for p in PAGES]
-    body = "\n".join(f"  <url><loc>{u}</loc><priority>{pr}</priority></url>" for u, pr in urls)
+    """One entry per page and language, each carrying its language equivalents (xhtml:link),
+    exactly the alternates the pages themselves declare. Families sorted by priority, English first."""
+    families = [({code: HOME[code] for code in LANGS}, "1.0")]
+    for p in sorted((p for p in PAGES if p["lang"] == "en"), key=lambda p: -float(p["priority"])):
+        families.append(({code: "/" + BY_FAMILY_LANG[(p["family"], code)]["slug"] + "/"
+                          for code in LANGS if (p["family"], code) in BY_FAMILY_LANG}, p["priority"]))
+    entries, count = [], 0
+    for urls, priority in families:
+        alts = "".join(
+            f'\n    <xhtml:link rel="alternate" hreflang="{code}" href="{SITE}{path}"/>'
+            for code, path in [*urls.items(), ("x-default", urls["en"])])
+        for path in urls.values():
+            entries.append(f"  <url>\n    <loc>{SITE}{path}</loc>{alts}\n    <priority>{priority}</priority>\n  </url>")
+            count += 1
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"{body}\n</urlset>\n", encoding="utf-8")
-    return len(urls)
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+        + "\n".join(entries) + "\n</urlset>\n", encoding="utf-8")
+    return count
 
 
 def check() -> None:
