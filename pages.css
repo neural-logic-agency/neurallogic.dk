@@ -10,7 +10,8 @@
   --acc-dim:rgba(159,209,232,.14);
 }
 *{box-sizing:border-box}
-html{background:var(--sc-canvas);color:var(--sc-ink);-webkit-text-size-adjust:100%}
+html{background:var(--sc-canvas);color:var(--sc-ink);-webkit-text-size-adjust:100%;
+  scroll-padding-top:76px} /* keeps a focused link from hiding under the sticky header */
 body{margin:0;font:400 16px/1.6 var(--ui);
   background:radial-gradient(1100px 640px at 16% -6%,rgba(159,209,232,.10),transparent 62%),var(--sc-canvas)}
 h1,h2,h3,p,ul,ol,figure{margin:0}

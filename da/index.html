@@ -22,11 +22,12 @@ setTimeout(function(){if(!d.classList.contains('sc-ready'))d.classList.add('sc-o
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B1F35'/><circle cx='11' cy='16' r='6' fill='%239FD1E8'/><circle cx='21.5' cy='16' r='6' fill='none' stroke='%239FD1E8' stroke-width='1.8'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/scrollcraft.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"WebSite","@id":"https://neurallogic.dk/#website","url":"https://neurallogic.dk/","name":"Neural Logic","inLanguage":"en","publisher":{"@id":"https://neurallogic.dk/#org"}},
+ {"@type":"WebSite","@id":"https://neurallogic.dk/#website","url":"https://neurallogic.dk/","name":"Neural Logic","inLanguage":["en","da","de"],"publisher":{"@id":"https://neurallogic.dk/#org"}},
+ {"@type":"WebPage","@id":"https://neurallogic.dk/da/#page","url":"https://neurallogic.dk/da/","name":"Neural Logic · AI-kolleger, der læser det, din virksomhed allerede ligger inde med","description":"Neural Logic bygger AI-kolleger, der læser en virksomheds arkiver, bygger den komplette sag op, citerer ord for ord og siger rent ud, hvad de ikke fandt. Et brand under Axon Trade ApS, København.","isPartOf":{"@id":"https://neurallogic.dk/#website"},"about":{"@id":"https://neurallogic.dk/#org"},"publisher":{"@id":"https://neurallogic.dk/#org"},"inLanguage":"da"},
  {"@type":"Organization","@id":"https://neurallogic.dk/#org","name":"Neural Logic","alternateName":"Axon Trade ApS","legalName":"Axon Trade ApS","url":"https://neurallogic.dk/","logo":"https://neurallogic.dk/og.png","description":"Neural Logic builds AI colleagues that read what a company already holds, lay out the complete file for any case, quote it word for word, and state what was not found.","email":"info@neurallogic.dk","foundingDate":"2025-09-18","founder":{"@type":"Person","name":"Thomas Möller"},"address":{"@type":"PostalAddress","streetAddress":"Njalsgade 21F, 2.","postalCode":"2300","addressLocality":"København S","addressCountry":"DK"},"identifier":{"@type":"PropertyValue","propertyID":"CVR","value":"45920763"},"knowsLanguage":["da","de","en"],"areaServed":["DK","DE","EU"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"info@neurallogic.dk","availableLanguage":["Danish","German","English"]}},
  {"@type":"Service","@id":"https://neurallogic.dk/#service","name":"AI document colleagues for companies with large archives","provider":{"@id":"https://neurallogic.dk/#org"},"serviceType":"AI assistant that reads a company's archives and lays out the complete file for any case, quoted word for word, stating what was not found","areaServed":["DK","DE","EU"],"audience":{"@type":"BusinessAudience","name":"Businesses whose knowledge sits in files: property and asset management, law and accounting practices, insurance, trading and wholesale, engineering and construction, agencies"},"termsOfService":"Processing in Europe under a data-processing agreement; decisions stay with people; no statements about people; writing to client systems only by invitation."}
 ]}
@@ -217,6 +218,7 @@ ul,ol{padding:0;list-style:none}
 .write label{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sc-ink-soft);margin-bottom:10px}
 .write .field{display:flex;align-items:center;flex-wrap:wrap;gap:8px 10px;background:rgba(0,0,0,.25);border:1px solid var(--line2);border-radius:10px;padding:6px 6px 6px 16px;max-width:640px}
 .write .field:focus-within{border-color:var(--sc-accent)}
+.write .field:focus-within{outline:2px solid var(--sc-accent);outline-offset:3px}
 .write input{flex:1;min-width:220px;background:none;border:0;color:var(--sc-ink);font:400 16px/1.4 var(--ui);padding:10px 0;outline:none;text-overflow:ellipsis}
 .write input::placeholder{color:var(--faint)}
 .write button{background:var(--sc-ink);color:var(--sc-accent-ink);border:0;border-radius:7px;padding:12px 16px;font:600 14px/1 var(--ui);cursor:pointer;white-space:nowrap;transition:transform .12s,background .15s}
@@ -291,7 +293,7 @@ html:not(.js) [data-sc-in],html:not(.js) [data-sc-stagger]>*,html.sc-off [data-s
 </style>
 </head>
 <body>
-<nav class="langs" aria-label="Language"><a href="https://neurallogic.dk/" hreflang="en" lang="en">EN</a><a href="https://neurallogic.dk/de/" hreflang="de" lang="de">DE</a><a href="https://neurallogic.dk/da/" hreflang="da" lang="da" aria-current="page">DA</a></nav>
+<nav class="langs" aria-label="Sprog"><a href="https://neurallogic.dk/" hreflang="en" lang="en">EN</a><a href="https://neurallogic.dk/de/" hreflang="de" lang="de">DE</a><a href="https://neurallogic.dk/da/" hreflang="da" lang="da" aria-current="page">DA</a></nav>
 
 <span data-sc-progress></span>
 <div class="sc-grain" aria-hidden="true"></div>
